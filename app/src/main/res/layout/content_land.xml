@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_list_restaurent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lunchlist.activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:id="@+id/tabhost_main"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/lst_restaurent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_detail"
+                        android:shrinkColumns="3"
+                        android:stretchColumns="1,3"
+                        >
+
+                        <TableRow
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_gravity="center"
+                                android:text="Name"/>
+                            <EditText
+                                android:id="@+id/edt_name"
+                                android:layout_weight="6"
+                                android:textSize="18dp"
+                                android:hint="Enter name"
+                                android:layout_gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_marginTop="@dimen/marginTop"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_gravity="center"
+                                android:text="Address"/>
+                            <EditText
+                                android:id="@+id/edt_address"
+                                android:layout_weight="6"
+                                android:textSize="18dp"
+                                android:hint="Enter address"
+                                android:layout_gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="@dimen/marginTop"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_gravity="center"
+                                android:text="Notes"/>
+                            <EditText
+                                android:id="@+id/edt_notes"
+                                android:layout_weight="6"
+                                android:textSize="18dp"
+                                android:hint="Enter notes"
+                                android:layout_gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="18dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_height="wrap_content"
+                            android:text="Chọn kiểu nhà hàng"/>
+
+                        <RadioGroup
+                            android:id="@+id/rd_typeres"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/rd_takeout"
+                                android:checked="true"
+                                android:textColor="@color/colorAccent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Take-out"
+                                android:layout_weight="1"/>
+                            <RadioButton
+                                android:id="@+id/rd_sitdown"
+                                android:textColor="@color/colorAccent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sit-down"
+                                android:layout_weight="1"/>
+                            <RadioButton
+                                android:id="@+id/rd_delivery"
+                                android:textColor="@color/colorAccent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Delivery"
+                                android:layout_weight="1"/>
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="18dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_height="wrap_content"
+                            android:text="Chọn mức giảm giá"/>
+
+                        <RadioGroup
+                            android:id="@+id/rd_gr"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/rd_25"
+                                android:checked="true"
+                                android:textColor="@color/colorAccent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm 25%"
+                                android:layout_weight="1"/>
+                            <RadioButton
+                                android:id="@+id/rd_50"
+                                android:textColor="@color/colorAccent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm 50%"
+                                android:layout_weight="1"/>
+                            <RadioButton
+                                android:id="@+id/rd_70"
+                                android:textColor="@color/colorAccent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm 70%"
+                                android:layout_weight="1"/>
+                        </RadioGroup>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content">
+                            <Button
+                                android:layout_marginTop="@dimen/marginTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Save"
+                                android:textSize="18dp"
+                                android:id="@+id/btn_submit"
+                                android:onClick="submit"
+                                android:textColor="@android:color/white"
+                                android:background="@color/colorPrimary"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"/>
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"/>
+                            <Button
+                                android:layout_marginTop="@dimen/marginTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View"
+                                android:id="@+id/btn_viewlist"
+                                android:onClick="viewwlist"
+                                android:textColor="@android:color/white"
+                                android:background="@color/colorPrimary"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"/>
+                        </LinearLayout>
+                    </TableLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

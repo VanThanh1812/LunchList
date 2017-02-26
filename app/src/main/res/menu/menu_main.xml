@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lunchlist.activity.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Raise Toast"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/run"
+        android:orderInCategory="100"
+        android:title="Run long toast"
+        app:showAsAction="never" />
+</menu>

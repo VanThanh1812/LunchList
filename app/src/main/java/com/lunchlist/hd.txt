@@ -1,0 +1,9 @@
+1. tao Detai activity (basic để có sẵn menu), ko có view
+2. hàm onListClick thì thay bằng intent sang activity mới
+3. Chuyển form info từ cũ sang mới, bắt đầu từ ScrollView, chuyển sang nằm trong activity
+4. Code hàm main detail : view, edittext, xử lý unit_price, onSave
+5. Dọn dẹp layout cũ, chừa lại listview, option cũng bỏ , thay bằng add
+6. Dọn code main, để lại adapter listview
+7. Truyền ID khi click item để chỉnh sửa
+8. Load dữ liệu nếu id khác 0
+9. Tạo hàm update và add

@@ -2,9 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lunchlist">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_describe"
+        android:icon="@drawable/ic_message_draw"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -19,9 +24,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.DetailActivity"
-            android:label="@string/title_activity_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".activity.DetailForm"
+            android:label="@string/title_activity_detail_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.QrCodeScannerActivity" />
+        <activity android:name=".activity.EditPreference"></activity>
     </application>
 
 </manifest>

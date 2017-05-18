@@ -18,7 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:textColor="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -28,21 +27,18 @@
             android:text="Name"/>
         <TextView
             android:id="@+id/tv_item_addr"
-            android:textColor="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Địa chỉ"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/tv_item_type"
-            android:textColor="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kiểu"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/tv_item_note"
-            android:textColor="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Note"

@@ -2,14 +2,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.lunchlist.activity.MainActivity">
-    <item
+    <!--<item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="Raise Toast"
         app:showAsAction="never" />
     <item
-        android:id="@+id/run"
+        android:id="@+id/takeout"
         android:orderInCategory="100"
-        android:title="Run long toast"
+        android:title="Take Out"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/long_toast"
+        android:orderInCategory="100"
+        android:title="Long Toast"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/long_toast1"
+        android:orderInCategory="100"
+        android:title="Play"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/long_toast2"
+        android:orderInCategory="100"
+        android:title="Stop"
+        app:showAsAction="never" />-->
+    <item
+        android:id="@+id/menu_add"
+        android:orderInCategory="100"
+        android:title="Thêm mặt hàng"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_runlong"
+        android:orderInCategory="100"
+        android:title="Run Long Task"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_preference"
+        android:orderInCategory="100"
+        android:title="Go to Edit Sort"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_thongke"
+        android:orderInCategory="100"
+        android:title="Thống kê"
+        app:showAsAction="never" />
+
+
 </menu>

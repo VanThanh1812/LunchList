@@ -88,7 +88,7 @@
                                 android:id="@+id/edt_address"
                                 android:layout_weight="6"
                                 android:textSize="18dp"
-                                android:hint="Enter address"
+                                android:hint="Enter number"
                                 android:layout_gravity="center"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content" />
@@ -111,7 +111,7 @@
                                 android:id="@+id/edt_notes"
                                 android:layout_weight="6"
                                 android:textSize="18dp"
-                                android:hint="Enter notes"
+                                android:hint="Enter barCode"
                                 android:layout_gravity="center"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content" />

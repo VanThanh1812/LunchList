@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_list_restaurent"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -10,7 +11,8 @@
     tools:context="com.lunchlist.activity.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TabHost
+
+    <!--<TabHost
         android:layout_width="match_parent"
         android:id="@+id/tabhost_main"
         android:layout_height="match_parent">
@@ -31,14 +33,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ListView
+                &lt;!&ndash;<ListView
                     android:id="@+id/lst_restaurent"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                </ListView>
+                </ListView>&ndash;&gt;
 
-                <ScrollView
+                &lt;!&ndash;<ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TableLayout
@@ -87,7 +89,7 @@
                                 android:id="@+id/edt_address"
                                 android:layout_weight="6"
                                 android:textSize="18dp"
-                                android:hint="Enter address"
+                                android:hint="Enter number"
                                 android:layout_gravity="center"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content" />
@@ -110,7 +112,7 @@
                                 android:id="@+id/edt_notes"
                                 android:layout_weight="6"
                                 android:textSize="18dp"
-                                android:hint="Enter notes"
+                                android:hint="Enter barCode"
                                 android:layout_gravity="center"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content" />
@@ -198,8 +200,7 @@
                                 android:layout_marginTop="@dimen/marginTop"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Save"
-                                android:textSize="18dp"
+                                android:text="Cập nhật"
                                 android:id="@+id/btn_submit"
                                 android:onClick="submit"
                                 android:textColor="@android:color/white"
@@ -213,7 +214,7 @@
                                 android:layout_marginTop="@dimen/marginTop"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="View"
+                                android:text="Thêm mới"
                                 android:id="@+id/btn_viewlist"
                                 android:onClick="viewwlist"
                                 android:textColor="@android:color/white"
@@ -222,8 +223,32 @@
                                 android:layout_weight="1"/>
                         </LinearLayout>
                     </TableLayout>
-                </ScrollView>
+                </ScrollView>&ndash;&gt;
+
+                &lt;!&ndash;<ListView
+                    android:id="@+id/lst_restaurent_maxsale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>&ndash;&gt;
             </FrameLayout>
         </LinearLayout>
-    </TabHost>
-</RelativeLayout>
+    </TabHost>-->
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:id="@+id/progressBar" />
+
+    <ListView
+        android:id="@+id/lst_restaurent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</LinearLayout>
